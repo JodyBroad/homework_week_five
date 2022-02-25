@@ -67,21 +67,21 @@
 user_input_scores_list = []
 
 
-def convert_user_input(user_input_value):
-    user_input = input("Enter a value: R, P or S ")
-    converted_user_input_to_rock = user_input.upper() + 'ock'
-    converted_user_input_to_paper = user_input.upper() + 'aper'
-    converted_user_input_to_scissors = user_input.upper() + 'cissors'
-    if user_input.upper() == 'R':
-        return converted_user_input_to_rock
-    if user_input.upper() == 'P':
-        return converted_user_input_to_paper
-    if user_input.upper() == 'S':
-        return converted_user_input_to_scissors
+# def convert_user_input(user_input_value):
+#     user_input = input("Enter a value: R, P or S ")
+#     converted_user_input_to_rock = user_input.upper() + 'ock'
+#     converted_user_input_to_paper = user_input.upper() + 'aper'
+#     converted_user_input_to_scissors = user_input.upper() + 'cissors'
+#     if user_input.upper() == 'R':
+#         return converted_user_input_to_rock
+#     if user_input.upper() == 'P':
+#         return converted_user_input_to_paper
+#     if user_input.upper() == 'S':
+#         return converted_user_input_to_scissors
 
 
-print("Your choice is", convert_user_input(0))
-# user_choice = convert_user_input(0)
+# print("Your choice is", convert_user_input(0))
+# # user_choice = convert_user_input(0)
 
 def convert_user_choice_(letter_value, user_choice_message='Your choice is'):
     user_letter_input = input("Enter a value: R, P or S ")
@@ -94,6 +94,7 @@ def convert_user_choice_(letter_value, user_choice_message='Your choice is'):
         print(user_choice_message, "Scissors")
 
 
+# print(convert_user_choice_(0))
 
 
 
@@ -124,6 +125,18 @@ def convert_computer_choice(value, multiply_by_1):
 # convert_computer_choice(computer_input, 1)
 computer_choice = convert_computer_choice(computer_input, 1)
 print("The computer's choice is", computer_choice)
+
+def convert_computer_choice(value, multiply_by_1):
+    multiply_by_1 = (computer_input * 1)
+    if multiply_by_1 == 0:
+        return 'Rock'
+    if multiply_by_1 == 1:
+        return 'Paper'
+    if multiply_by_1 == 2:
+        return 'Scissors'
+
+
+
 
 # created a function called convert_choice, which multiplies the user value by one.
 # The answer returns either Rock, Paper, or Scissors
@@ -189,8 +202,8 @@ max_number_of_rounds = 3
 round_number = 0
 
 
-while round_number < max_number_of_rounds:
-
+# while round_number < max_number_of_rounds:
+#
 
 
 
