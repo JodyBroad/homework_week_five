@@ -105,7 +105,7 @@ computer_input = random.randint(0, 2)
 # Convert the computer's choice.
 # if each value multiplied by 1 is 0, 1 or 2 as the output, then do this
 # Could have a multiply function that converts computer value to Rock, Paper, Scissors by
-# 0 x 0 = 'Rock'
+# 0 x 1 = 'Rock'
 # 1 x 1 = 'Paper'
 # 2 x 1 = 'Scissors'
 
