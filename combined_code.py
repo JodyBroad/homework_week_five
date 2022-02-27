@@ -26,7 +26,7 @@ while True:
 
         return player_1_choice
 
-
+# calling convert_player_1 and saving the output to the variable player_1_action
     player_1_action = convert_player_1(player_1)
 
     # to cover invalid input scenario
@@ -34,9 +34,10 @@ while True:
         print("Please enter a valid input, R, P or S")
         continue
 
+# printing what the player chose
     print("You chose: {}".format(player_1_action))
 
-
+# function to convert computer input
     def convert_computer_input(computer_input):
         if computer_input == 0:
             computer_input_choice = actions[0]
@@ -48,7 +49,7 @@ while True:
             computer_input_choice = actions[2]
             return computer_input_choice
 
-
+# generating random number for computer input
     computer_input = random.randint(0, 2)
     player_2_action = convert_computer_input(computer_input)
     print("The computer chose: {}".format(player_2_action))
