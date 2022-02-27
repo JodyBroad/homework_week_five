@@ -49,7 +49,7 @@ while True:
     print("The computer chose: ", player_2_action)
 
     # compares user's choice against computer's choice and then display a message as to if the user won, lost or drew
-    # if i do this as a function the scoring doesn't work
+    # if I do this as a function the scoring doesn't work
 
     if player_1_action == player_2_action:
         print("Both players selected the same, it is a tie")
@@ -77,10 +77,8 @@ while True:
 
     print("Total human victories = ", human_victories, "Total computer victories = ", computer_victories)
 
-# ask them if they want to play again, any input other than Y will break the loop and exit
+# ask them if they want to play again, any input other than Y/y will break the loop and exit
 
     play_again = input("Do you want to play again? (Y/N): ")
     if play_again.upper() != "Y":
         break
-
-
