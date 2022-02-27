@@ -49,6 +49,8 @@ while True:
     print("The computer chose: ", player_2_action)
 
     # compares user's choice against computer's choice and then display a message as to if the user won, lost or drew
+    # if i do this as a function the scoring doesn't work
+
     if player_1_action == player_2_action:
         print("Both players selected the same, it is a tie")
     elif player_1_action == "Rock":
