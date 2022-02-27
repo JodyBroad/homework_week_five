@@ -80,7 +80,7 @@ while True:
 # ask them if they want to play again, any input other than Y will break the loop and exit
 
     play_again = input("Do you want to play again? (Y/N): ")
-    if play_again != "Y":
+    if play_again.upper() != "Y":
         break
 
 
