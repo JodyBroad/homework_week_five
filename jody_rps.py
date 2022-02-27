@@ -24,15 +24,15 @@ while True:
 
     def convert_player_1(player_1):
         if player_1.upper() == "R":
-            player_1_choice = "Rock"
+            player_1_action = "Rock"
         elif player_1.upper() == "P":
-            player_1_choice = "Paper"
+            player_1_action = "Paper"
         elif player_1.upper() == "S":
-            player_1_choice = "Scissors"
+            player_1_action = "Scissors"
         else:
-            player_1_choice = "Invalid input"
+            player_1_action = "Invalid input"
 
-        return player_1_choice
+        return player_1_action
 
 
     player_1_action = convert_player_1(player_1)
@@ -49,44 +49,36 @@ while True:
     print("The computer chose: ", player_2_action)
 
     # compares user's choice against computer's choice and then display a message as to if the user won, lost or drew
-    def who_wins(player_1_action, player_2_action, computer_victories, human_victories):
-        if player_1_action == player_2_action:
-            print("Both players selected the same, it is a tie")
-        elif player_1_action == "Rock":
-            if player_2_action == "Scissors":
-                print("Rock breaks scissors, so you are victorious!")
-                human_victories += 1
-                return human_victories
-            else:
-                print("Paper wraps rock, so you have been defeated")
-                computer_victories += 1
-                return computer_victories
-        elif player_1_action == "Paper":
-            if player_2_action == "Rock":
-                print("Paper wraps rock, so you are victorious!")
-                human_victories += 1
-                return human_victories
-            else:
-                print("Scissors cut paper, so you have been defeated")
-                computer_victories += 1
-                return computer_victories
-        elif player_1_action == "Scissors":
-            if player_2_action == "Paper":
-                print("Scissors cut paper, so you are victorious!")
-                human_victories += 1
-                return human_victories
-            else:
-                print("Rock breaks scissors, so you have been defeated")
-                computer_victories += 1
-                return computer_victories
+    if player_1_action == player_2_action:
+        print("Both players selected the same, it is a tie")
+    elif player_1_action == "Rock":
+        if player_2_action == "Scissors":
+            print("Rock breaks scissors, so you are victorious!")
+            human_victories += 1
+        else:
+            print("Paper wraps rock, so you have been defeated")
+            computer_victories += 1
+    elif player_1_action == "Paper":
+        if player_2_action == "Rock":
+            print("Paper wraps rock, so you are victorious!")
+            human_victories += 1
+        else:
+            print("Scissors cut paper, so you have been defeated")
+            computer_victories += 1
+    elif player_1_action == "Scissors":
+        if player_2_action == "Paper":
+            print("Scissors cut paper, so you are victorious!")
+            human_victories += 1
+        else:
+            print("Rock breaks scissors, so you have been defeated")
+            computer_victories += 1
 
-# call the who_wins function to determine a winner:
-
-    who_wins(player_1_action, player_2_action, computer_victories, human_victories)
     print("Total human victories = ", human_victories, "Total computer victories = ", computer_victories)
+
+# ask them if they want to play again, any input other than Y will break the loop and exit
 
     play_again = input("Do you want to play again? (Y/N): ")
     if play_again != "Y":
         break
 
-    # could add an ongoing score here as an extra
+
