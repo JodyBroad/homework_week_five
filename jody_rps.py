@@ -24,15 +24,15 @@ while True:
 
     def convert_player_1(player_1):
         if player_1.upper() == "R":
-            player_1_action = "Rock"
+            player_1_choice = "Rock"
         elif player_1.upper() == "P":
-            player_1_action = "Paper"
+            player_1_choice = "Paper"
         elif player_1.upper() == "S":
-            player_1_action = "Scissors"
+            player_1_choice = "Scissors"
         else:
-            player_1_action = "Invalid input"
+            player_1_choice = "Invalid input"
 
-        return player_1_action
+        return player_1_choice
 
 
     player_1_action = convert_player_1(player_1)
