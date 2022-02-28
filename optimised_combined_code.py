@@ -2,7 +2,8 @@
 
 import random
 
-print("Rock, Paper Scissors Game - let's play!\nThe rules are: Rock smashes Scissors, Paper wraps Rock and Scissors cut Paper!")
+print("Rock, Paper Scissors Game - let's play!\nThe rules are: Rock smashes Scissors, Paper wraps Rock and Scissors cut"
+      " Paper!")
 
 # list of possible actions
 actions = ["Rock", "Paper", "Scissors"]
@@ -12,6 +13,7 @@ human_victories = 0
 computer_victories = 0
 
 # function for human choice
+
 
 def convert_human(human):
     if human.upper() == "R":
@@ -27,11 +29,13 @@ def convert_human(human):
 
 # function to convert computer input
 
+
 def convert_computer_input(computer_input):
     computer_input_choice = actions[computer_input]
     return computer_input_choice
 
 # function to decide winner and scoring
+
 
 def who_wins(player_1_action, player_2_action):
     global human_victories
